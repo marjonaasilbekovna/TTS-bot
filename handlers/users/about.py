@@ -5,5 +5,18 @@ from aiogram.filters import Command
 #about commands
 @dp.message(Command("about"))
 async def about_commands(message:Message):
-    await message.answer("Bu bot sizga matnlaringizni tez va oson 🔊 ovozli habarga aylantirishga yordam beradi.Bot oson va sifatli ishlaydi.")
+    await message.answer("""
+    🤖  TTS Bot haqida ;
+                         
+
+    Bu bot matnlarni ovozli formatga aylantiradi. 🎙️
+                         
+    📌 Foydalanish tartibi:
+    
+    🔹 Matn yuboring ;
+    🔹 Bot uni ovozga aylantirib qaytaradi 🎧
+                         
+                         
+    💡 Bu bot 'Sifatedu' uquv markazi tomonidan yaratilgan.
+""")
 
