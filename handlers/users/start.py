@@ -9,7 +9,36 @@ async def start_command(message:Message):
     telegram_id = message.from_user.id
     try:
         db.add_user(full_name=full_name,telegram_id=telegram_id) #foydalanuvchi bazaga qo'shildi
-        await message.answer(text=f"Assalomu alaykum {full_name}  TTs botimizga hush kelibsiz.\nMatnni ovozga aylantirish uchun tugmani tanlang.\n\nBu bot 'Sifatedu' uquv markazi tomanidan yaratilgan.", reply_markup=button)
-    except:
-        await message.answer(text=f"Assalomu alaykum {full_name}  TTs botimizga hush kelibsiz.\nMatnni ovozga aylantirish uchun tugmani tanlang.\n\nBu bot 'Sifatedu' uquv markazi tomanidan yaratilgan.", reply_markup=button)
+        await message.answer(text=f"""
+Assalomu alaykum! 👋
 
+Hurmatli {full_name}  ❤️                          
+
+Men matnni ovozga aylantiruvchi botman. 🎙️
+Menga matn yuboring, men esa uni siz uchun ovozli qilib beraman! 🔊
+
+📌 Foydalanish:
+1️⃣ Oddiy matn yuboring.
+2️⃣ Men uni ovozga aylantirib, sizga yuboraman. 🎧
+
+Qo‘shimcha yordam kerak bo‘lsa,  '/help'  tugmasidan foydalaning. 🚀
+
+
+""", reply_markup=button)
+    except:
+        await message.answer(text=f"""
+Assalomu alaykum! 👋
+
+Hurmatli {full_name}  ❤️                          
+
+Men matnni ovozga aylantiruvchi botman. 🎙️
+Menga matn yuboring, men esa uni siz uchun ovozli qilib beraman! 🔊
+
+📌 Foydalanish:
+1️⃣ Oddiy matn yuboring.
+2️⃣ Men uni ovozga aylantirib, sizga yuboraman. 🎧
+
+Qo‘shimcha yordam kerak bo‘lsa,  '/help'  tugmasidan foydalaning. 🚀
+
+
+""", reply_markup=button)
